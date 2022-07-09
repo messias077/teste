@@ -48,7 +48,7 @@ pip install -r requirements.txt
 Para utilizar o programa e rodar os testes com parâmetros padrão execute os passos abaixo:
 
 ### 2.1 - Copiar editais
-* **Copie editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/testes'](/repo/testes/) para a pasta de entrada padrão do programa que é, 'ren_editais/repo/editais', ou para outra pasta, caso tenha alterado os arquivos de configuração.
+* **Copie editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/testes'](editais_testes/) para a pasta de entrada padrão do programa que é, 'ren_editais/repo/editais', ou para outra pasta, caso tenha alterado os arquivos de configuração.
 
 ### 2.2 - Processar editais
 * **Rode o script para processar editais e gerar os arquivos para anotação.** Execute o comando abaixo para converter os editais em texto plano, cadastrar no banco de dados e gerar os arquivos que os anotadores utilizam para importar no Doccano e realizar as anotações.
@@ -56,7 +56,7 @@ Para utilizar o programa e rodar os testes com parâmetros padrão execute os pa
 python gerar_dataset_anotacao.py
 ```
 ### 2.3 - Anotação das entidades
-* **Realizar anotações.** Importe os arquivos gerados no  para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para anotação]().
+* **Realizar anotações.** Importe os arquivos gerados no  para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para anotação](tutoriais/).
 
 ### 2.4 - Geração do *corpus*
 * **Copie os arquivos anotados.** Copie os arquivos JSONL que foram anotados exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do programa, que é 'repo/arquivos_anotados', ou para outra pasta, caso tenha alterado os arquivos de configuração.
