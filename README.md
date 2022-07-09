@@ -56,7 +56,7 @@ Para utilizar o programa e rodar os testes com parâmetros padrão execute os pa
 python gerar_dataset_anotacao.py
 ```
 ### 2.3 - Anotação das entidades
-* **Realizar anotações.** Importe os arquivos gerados no  para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para anotação](tutoriais/).
+* **Realizar anotações.** Importe os arquivos gerados no  para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para anotação](docs/Tutorial_Doccano.pdf).
 
 ### 2.4 - Geração do *corpus*
 * **Copie os arquivos anotados.** Copie os arquivos JSONL que foram anotados exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do programa, que é 'repo/arquivos_anotados', ou para outra pasta, caso tenha alterado os arquivos de configuração.
