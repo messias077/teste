@@ -2,7 +2,6 @@
 *.sh
 *.dat
 *.csv
-*.png
 *.xml
 *.iml
 *.doc

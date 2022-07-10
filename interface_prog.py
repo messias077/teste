@@ -362,11 +362,11 @@ def menu():
     validar_pastas(parametros)
 
     while True:
-        print('\n***************( INTERFACE DE BACKEND - MODO TEXTO )****************\n')
+        print('\n***************( INTERFACE DO PROTÓTIPO - MODO TEXTO )**************\n')
         print('                      >> MENU <<\n')
-        print('             1 - Cadastrar arquivos')
+        print('             1 - Cadastrar editais')
         print('             2 - Pré-Processar')
-        print('             3 - Buscar documentos (MongoDB)')
+        print('             3 - Buscar editais (MongoDB)')
         print('             4 - Construir Dataset')
         print('             5 - Converter JSONL para CONLL')
         print('\n********************************************************************')
