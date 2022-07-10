@@ -14,7 +14,7 @@ Repositório do artigo publicado: [*"Combining Word Embeddings for Portuguese Na
 ---
 ## Introdução
 Este README fornece informações e instruções para quem quiser testar o protótipo e/ou reproduzir os experimentos de REN utilizando o *corpus* (['ren_editais/corpora'](corpora/)) disponibilizado neste repositório. São basicamente duas opções de uso:
-* **Testar a geração de um *corpus*.** Basta seguir os passos descritos na seção [1](#1-preparação-do-ambiente) e [2](#2-instruções-de-uso). É importante ressaltar que, executando estes passos, será **quase impossível** gerar o mesmo arquivo de *corpus* que foi produzido neste trabalho, pois este processo envolve a anotação manual das entidades executada por uma ou mais pessoas, assim sendo, para reproduzir o mesmo *corpus*, seria necessário a anotação, exatamente, das mesmas entidades que foram identificadas e anotadas pelo grupo de pessoas que auxiliaram no processo de anotação e geração do *corpus* disponibilizado em ['ren_editais/corpora'](corpora/). Portanto, o intuito das seções 1 e 2 é fornecer uma maneira dos interessados no protótipo poderem testar o processo de geração de um *corpus* de teste, realizando anotações das entidades (através da ferramenta Doccano), exportando e gerando o *corpus* de teste no formato CONLL.
+* **Testar a geração de um *corpus*.** Basta seguir os passos descritos nas seções [1](#1-preparação-do-ambiente) e [2](#2-instruções-de-uso). É importante ressaltar que, executando estes passos, será **quase impossível** gerar o mesmo arquivo de *corpus* que foi produzido neste trabalho, pois este processo envolve a anotação manual das entidades executada por uma ou mais pessoas, assim sendo, para reproduzir o mesmo *corpus*, seria necessário a anotação, exatamente, das mesmas entidades que foram identificadas e anotadas pelo grupo de pessoas que auxiliaram no processo de anotação e geração do *corpus* disponibilizado em ['ren_editais/corpora'](corpora/). Portanto, o intuito das seções 1 e 2 é fornecer uma maneira dos interessados no protótipo poderem testar o processo de geração de um *corpus* de teste, realizando anotações das entidades (através da ferramenta Doccano), exportando e gerando o *corpus* de teste no formato CONLL.
 
 * **Reproduzir os experimentos.** A reprodução dos experimentos é **totalmente possível**, uma vez que será utilizado o mesmo *corpus* e scritps utilizados na geração dos resultados. Caso queira somente reproduzir os experimentos de REN realizados neste trabalho, sem testar a geração de um *corpus*, prepare seu ambiente executando os passos descritos na seção [1](#1-preparação-do-ambiente), **EXCETO** a instalação do **MongoDB** (ele não será necessário para a reprodução dos experimentos), e depois vá direto para a seção [3](#3-reproduzir-os-experimentos).
 
@@ -31,13 +31,13 @@ Instale os programas abaixo:
 
 * **Git.** Instruções: [Linux](https://git-scm.com/download/linux) ou [Windows](https://git-scm.com/download/win).
 
-*Nota: Há possibilidade de instalar o MongoDB via container do [Docker](https://www.docker.com/), porém esta forma de instalação não será abordada nos testes. Caso queira instalar dessa forma, fique à vontade, pois o protótipo suporta e funciona perfeitamente.*
+*Nota: Há possibilidade de instalar o MongoDB via container do [Docker](https://www.docker.com/), porém esta forma de instalação não será abordada nos testes. Caso queira instalar dessa maneira, fique à vontade, pois o protótipo suporta e funciona perfeitamente.*
 
 ### 1.2 - Organize as coisas
 * **Crie uma pasta para organizar os arquivos em um local de sua preferência.**
 
 ### 1.3 - Tela preta
-* **Comandos.** Todos os comandos daqui em diante serão na famosa tela preta do terminal! Abra um shell Linux ou prompt de comando Windows para executar os próximos passos.
+* **Comandos.** Todos os comandos daqui em diante serão executados na famosa tela preta do terminal! Abra um shell Linux ou prompt de comando Windows para seguir os próximos passos.
 
 ### 1.4 - Ambiente virtual Python (opcional)
 
@@ -81,7 +81,7 @@ python gerar_dataset_anotacao.py
 *Nota: Para facilitar, importe os labels para o Doccano utilizando o arquivo ['labels/label_config.json'](labels/label_config.json)*. Veja como no tutorial.
 
 ### 2.4 - Geração do *corpus* de teste
-* **Copie os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é 'repo/arquivos_anotados', ou para outra pasta, caso tenha alterado os arquivos de configuração.
+* **Copie de descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é 'repo/arquivos_anotados', ou para outra pasta, caso tenha alterado os arquivos de configuração. Descompacte os arquivos.
 
 * **Gere o *corpus* de teste no formato CONLL.** Para converter os arquivos anotados e gerar o *corpus* no formato CONLL rode o comando abaixo:
 ```
@@ -101,7 +101,7 @@ python interface_prog.py
 
 Nesta, a escolha da opção **'1 - Cadastrar editais'** e em seguida as opções **'2 - Pré-Processar'** e **'4 - Construir Dataset'** é equivalente à rodar o script *'gerar_dataset_anotacao.py'* (descrito no passo [2.2](#22---processar-editais)), porém fornecendo os parâmetros interativamente.
 
-Já, ao escolher a opção **'5 - Converter JSONL para CONLL'**, após ter realizado a anotação dos arquivos no Doccano, é equivalente à rodar o script *'converter_arquivos_anotados.py'* (descrito no passo [2.4](#24---geração-do-corpus)).
+Já, ao escolher a opção **'5 - Converter JSONL para CONLL'**, após ter realizado a anotação dos arquivos no Doccano, é equivalente à rodar o script *'converter_arquivos_anotados.py'* (descrito no passo [2.4](#24---geração-do-corpus-de-teste)).
 
 A opção **'3 - Buscar editais (MongoDB)'** pode ser utilizada para pesquisar os editais que tiveram o conteúdo extraido e salvo no banco de dados. Não há script equivalente para esta opção.
 
