@@ -7,7 +7,8 @@ Aluno: [Messias Gomes da Silva](http://lattes.cnpq.br/4261938952361658)<br>
 Orientador: [Prof. Dr. Hilário Tomaz Alves de Oliveira](http://lattes.cnpq.br/8980213630090119)<br>
 Repositório do artigo publicado: [*"Combining Word Embeddings for Portuguese Named Entity Recognition"*](https://github.com/messias077/ner_pt)
 
-[Documentação do protótipo](docs/program_documentation/index.html)
+---
+### Acesse a [documentação do protótipo](https://messias077.github.io/teste/) para detalhes sobre a implementação!
 
 ---
 ## Introdução
@@ -72,7 +73,7 @@ Para utilizar o protótipo e rodar os testes com parâmetros padrão execute os 
 python gerar_dataset_anotacao.py
 ```
 ### 2.3 - Anotação das entidades
-* **Realizar anotações.** Importe os arquivos gerados no passo 2.2 para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para instalação do Doccano e anotação das entidades](docs/Tutorial_Doccano.pdf).
+* **Realizar anotações.** Importe os arquivos gerados no passo 2.2 para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para instalação do Doccano e anotação das entidades](https://messias077.github.io/teste/tutorial_doccano.pdf).
 
 ### 2.4 - Geração do *corpus* de teste
 * **Copie os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é 'repo/arquivos_anotados', ou para outra pasta, caso tenha alterado os arquivos de configuração.
