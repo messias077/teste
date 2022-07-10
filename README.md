@@ -8,7 +8,7 @@ Orientador: [Prof. Dr. Hilário Tomaz Alves de Oliveira](http://lattes.cnpq.br/8
 Repositório do artigo publicado: [*"Combining Word Embeddings for Portuguese Named Entity Recognition"*](https://github.com/messias077/ner_pt)
 
 ---
-### Acesse a [documentação do protótipo](https://messias077.github.io/teste/) para detalhes sobre a implementação!
+### >> Acesse a [documentação do protótipo](https://messias077.github.io/teste/) para detalhes sobre a implementação!
 
 ---
 ## Introdução
@@ -39,11 +39,13 @@ Instale os programas abaixo:
 * **Comandos.** Todos os comandos daqui em diante serão na famosa tela preta do terminal! Abra um shell Linux ou prompt de comando Windows para executar os próximos passos.
 
 ### 1.4 - Ambiente virtual Python (opcional)
+
 *Nota: Apesar de não ser mandatório, a criação de um ambiente virtual ajuda na organização dos projetos e evita conflitos entre bibliotecas de projetos diferentes.*
-* **Instale e ative o Venv.** Entre na pasta criada no passo 1.2, instale e ative Venv. Instruções: [Linux e Windows (escolha o sistema na página)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
+
+* **Instale e ative o Venv.** Entre na pasta criada no passo [1.2](#12---organize-as-coisas), instale e ative Venv. Instruções: [Linux e Windows (escolha o sistema na página)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
 
 ### 1.5 - Clone o repositório
-* **Clone.** De dentro da pasta criada no passo 1.2, clone o repositório com o comando:
+* **Clone.** De dentro da pasta criada no passo [1.2](#12---organize-as-coisas), clone o repositório com o comando:
 ```
 git clone https://github.com/messias077/ren_editais.git
 ```
@@ -65,15 +67,17 @@ pip install -r requirements.txt
 Para utilizar o protótipo e rodar os testes com parâmetros padrão execute os passos abaixo:
 
 ### 2.1 - Copiar editais
-* **Copie editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é, 'ren_editais/repo/editais', ou para outra pasta, caso tenha alterado os arquivos de configuração.
+* **Copie os editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é, 'ren_editais/repo/editais', ou para outra pasta, caso tenha alterado os arquivos de configuração.
 
 ### 2.2 - Processar editais
-* **Rode o script para processar editais e gerar os arquivos para anotação.** Execute o comando abaixo para converter os editais em texto plano, cadastrar no banco de dados e gerar os arquivos que os anotadores utilizam para importar no Doccano e realizar as anotações.
+* **Rode o script para processar os editais e gerar os arquivos para anotação.** Execute o comando abaixo para converter os editais em texto plano, cadastrar no banco de dados e gerar os arquivos que os anotadores utilizam para importar no Doccano e realizar as anotações.
 ```
 python gerar_dataset_anotacao.py
 ```
 ### 2.3 - Anotação das entidades
-* **Realizar anotações.** Importe os arquivos gerados no passo 2.2 para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para instalação do Doccano e anotação das entidades](https://messias077.github.io/teste/tutorial_doccano.pdf).
+* **Realizar anotações.** Importe os arquivos gerados no passo [2.2](#22---processar-editais) para dentro da ferramenta Doccano, faça as anotações e exporte os arquivos anotados. Instruções: [Tutorial para instalação do Doccano e anotação das entidades](https://messias077.github.io/teste/tutorial_doccano.pdf).
+
+*Nota: Para facilitar, importe os labels para o Doccano utilizando o arquivo ['labels/label_config.json'](labels/label_config.json)*. Veja como no tutorial.
 
 ### 2.4 - Geração do *corpus* de teste
 * **Copie os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é 'repo/arquivos_anotados', ou para outra pasta, caso tenha alterado os arquivos de configuração.
@@ -96,8 +100,6 @@ Nesta, a escolha da opção **'1 - Cadastrar editais'** e em seguida as opções
 Já, ao escolher a opção **'5 - Converter JSONL para CONLL'**, após ter realizado a anotação dos arquivo no Doccano, é equivalente à rodar o script *'converter_arquivos_anotados.py'* (descrito no passo [2.4](#24---geração-do-corpus)).
 
 A opção **'3 - Buscar editais (MongoDB)'** pode ser utilizada para pesquisar os editais que tiveram o conteúdo extraido e salvo no banco de dados. Não há script equivalente para esta opção.
-
-FALAR DO MODO INTERATIVO E DA DOCUMENTAÇÃO DAS OPÇOES
 
 ---
 ## 3. Reproduzir os experimentos

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 11,
+    "text": "Organizacao",
+    "prefixKey": null,
+    "suffixKey": "0",
+    "backgroundColor": "#F44336",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 12,
+    "text": "Local",
+    "prefixKey": null,
+    "suffixKey": "1",
+    "backgroundColor": "#E91E63",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 13,
+    "text": "Tempo",
+    "prefixKey": null,
+    "suffixKey": "2",
+    "backgroundColor": "#9C27B0",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 14,
+    "text": "Decreto",
+    "prefixKey": null,
+    "suffixKey": "4",
+    "backgroundColor": "#2196F3",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 15,
+    "text": "Artigo",
+    "prefixKey": null,
+    "suffixKey": "5",
+    "backgroundColor": "#009688",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 16,
+    "text": "Inciso",
+    "prefixKey": null,
+    "suffixKey": "6",
+    "backgroundColor": "#8BC34A",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 17,
+    "text": "Lei",
+    "prefixKey": null,
+    "suffixKey": "7",
+    "backgroundColor": "#CDDC39",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 18,
+    "text": "Portaria",
+    "prefixKey": null,
+    "suffixKey": "8",
+    "backgroundColor": "#F57F17",
+    "textColor": "#ffffff"
+  }
+]
