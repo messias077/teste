@@ -1,21 +1,22 @@
 # ren_editais
-Repositório para disponibilização do protótipo da ferramenta para executar a tarefa de REN (Reconhecimento de Entidades Nomeadas) em editais de compras. 
+Repositório para disponibilização do protótipo do programa que foi desenvolvido para executar a tarefa de REN (Reconhecimento de Entidades Nomeadas) em editais de compras. 
 
-Este protótipo está sendo utilizado na dissertação apresentada ao [Programa de Pós-Graduação em Computação Aplicada do Instituto Federal do Espírito Santo (IFES)](https://www.ifes.edu.br/cursos/pos-graduacao/mestrado-em-computacao-aplicada), como requisito parcial para obtenção do título de Mestre em Computação Aplicada.
+Este protótipo foi construido para ser utilizado como apoio na execução dos experimentos necessários para a dissertação apresentada ao [Programa de Pós-Graduação em Computação Aplicada do Instituto Federal do Espírito Santo (IFES)](https://www.ifes.edu.br/cursos/pos-graduacao/mestrado-em-computacao-aplicada), como requisito parcial para obtenção do título de Mestre em Computação Aplicada.
 
 Aluno: [Messias Gomes da Silva](http://lattes.cnpq.br/4261938952361658)<br>
 Orientador: [Prof. Dr. Hilário Tomaz Alves de Oliveira](http://lattes.cnpq.br/8980213630090119)<br>
 Repositório do artigo publicado: [*"Combining Word Embeddings for Portuguese Named Entity Recognition"*](https://github.com/messias077/ner_pt)
 
 ---
+### >> Leia a [dissertação](https://messias077.github.io/teste/dissertacao.pdf) para entender o contexto em que o protótipo foi utilizado.
 ### >> Acesse a [documentação do protótipo](https://messias077.github.io/teste/) para detalhes sobre a implementação!
 
 ---
 ## Introdução
 Este README fornece informações e instruções para quem quiser testar o protótipo e/ou reproduzir os experimentos de REN utilizando o *corpus* (['ren_editais/corpora'](corpora/)) disponibilizado neste repositório. São basicamente duas opções de uso:
-* **Testar a geração de um *corpus*.** Basta seguir os passos descritos na seção [1](#1-preparação-do-ambiente) e [2](#2-instruções-de-uso). É importante ressaltar que, executando estes passos, será quase impossível gerar o mesmo arquivo de *corpus* que foi produzido neste trabalho, pois este processo envolve a anotação manual das entidades executada por uma ou mais pessoas, assim sendo, para reproduzir o mesmo corpus, seria necessário a anotação, exatamente, das mesmas entidades que foram anotadas pelo grupo de pessoas que auxiliaram no processo de anotação e geração do *corpus* disponibilizado em ['ren_editais/corpora'](corpora/). Portanto, o intuito das seções 1 e 2 é fornecer uma maneira dos interessados no protótipo poderem testar o processo de geração de um *corpus* de teste, realizando anotações das entidades (através da ferramenta Doccano), exportando e gerando o *corpus* de teste no formato CONLL.
+* **Testar a geração de um *corpus*.** Basta seguir os passos descritos na seção [1](#1-preparação-do-ambiente) e [2](#2-instruções-de-uso). É importante ressaltar que, executando estes passos, será **quase impossível** gerar o mesmo arquivo de *corpus* que foi produzido neste trabalho, pois este processo envolve a anotação manual das entidades executada por uma ou mais pessoas, assim sendo, para reproduzir o mesmo *corpus*, seria necessário a anotação, exatamente, das mesmas entidades que foram identificadas e anotadas pelo grupo de pessoas que auxiliaram no processo de anotação e geração do *corpus* disponibilizado em ['ren_editais/corpora'](corpora/). Portanto, o intuito das seções 1 e 2 é fornecer uma maneira dos interessados no protótipo poderem testar o processo de geração de um *corpus* de teste, realizando anotações das entidades (através da ferramenta Doccano), exportando e gerando o *corpus* de teste no formato CONLL.
 
-* **Reproduzir os experimentos.** Caso queira somente reproduzir os experimentos de REN realizados neste trabalho, sem testar a geração de um *corpus*, prepare seu ambiente executando os passos descritos na seção [1](#1-preparação-do-ambiente), **EXCETO** a instalação do **MongoDB** (ele não será necessário para a reprodução dos experimentos), e depois vá direto para a seção [3](#3-reproduzir-os-experimentos).
+* **Reproduzir os experimentos.** A reprodução dos experimentos é **totalmente possível**, uma vez que será utilizado o mesmo *corpus* e scritps utilizados na geração dos resultados. Caso queira somente reproduzir os experimentos de REN realizados neste trabalho, sem testar a geração de um *corpus*, prepare seu ambiente executando os passos descritos na seção [1](#1-preparação-do-ambiente), **EXCETO** a instalação do **MongoDB** (ele não será necessário para a reprodução dos experimentos), e depois vá direto para a seção [3](#3-reproduzir-os-experimentos).
 
 Se você estiver interessado em testar o protótipo e também reproduzir os experimentos, será uma satisfação enorme! Neste caso, siga todos os passos descritos a seguir.
 
