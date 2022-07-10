@@ -84,20 +84,23 @@ python gerar_dataset_anotacao.py
 
 * **Gere o *corpus* de teste no formato CONLL.** Para converter os arquivos anotados e gerar o *corpus* no formato CONLL rode o comando abaixo:
 ```
-converter_arquivos_anotados.py
+python converter_arquivos_anotados.py
 ```
 Pronto! Se tudo aconteceu conforme esperado, nesse ponto você tem um *corpus*, baseado nos editais de testes, que pode ser utilizado como base para realizar as tarefas de REN.
 
 ### * (Opcional) Modo interativo
 
-Para realizar a geração do *corpus* de teste é possível também interagir com o protótipo através de uma interface em modo texto.
+Para realizar a geração do *corpus* de teste é possível também interagir com o protótipo através de uma interface em modo texto. Para abrir a inteface execute o comando abaixo:
+```
+python interface_prog.py
+```
 <br>
 
 ![](./print_interface.png)
 
 Nesta, a escolha da opção **'1 - Cadastrar editais'** e em seguida as opções **'2 - Pré-Processar'** e **'4 - Construir Dataset'** é equivalente à rodar o script *'gerar_dataset_anotacao.py'* (descrito no passo [2.2](#22---processar-editais)), porém fornecendo os parâmetros interativamente.
 
-Já, ao escolher a opção **'5 - Converter JSONL para CONLL'**, após ter realizado a anotação dos arquivo no Doccano, é equivalente à rodar o script *'converter_arquivos_anotados.py'* (descrito no passo [2.4](#24---geração-do-corpus)).
+Já, ao escolher a opção **'5 - Converter JSONL para CONLL'**, após ter realizado a anotação dos arquivos no Doccano, é equivalente à rodar o script *'converter_arquivos_anotados.py'* (descrito no passo [2.4](#24---geração-do-corpus)).
 
 A opção **'3 - Buscar editais (MongoDB)'** pode ser utilizada para pesquisar os editais que tiveram o conteúdo extraido e salvo no banco de dados. Não há script equivalente para esta opção.
 
