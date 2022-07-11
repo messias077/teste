@@ -60,12 +60,11 @@ e rode os comandos:
 ```
 pip install -r requirements.txt
 ```
-*Nota: Caso esteja instalando no Windows, pode ser que dê erro por falta do ['Visual C++'](https://visualstudio.microsoft.com/visual-cpp-build-tools). Baixe e instale. Para rodar este protótipo é necessário somente marcar a opção 'Desenvolvimento para desktop com C++' e clicar em instalar.*
+*Nota: Caso esteja instalando no Windows, pode ser que dê erro na execução do comando anterior por falta do ['Visual C++'](https://visualstudio.microsoft.com/visual-cpp-build-tools). Baixe e instale. Para rodar este protótipo é necessário somente marcar a opção 'Desenvolvimento para desktop com C++' e clicar em instalar. Se pedir para reinicar o computador, reinicie e refaça os passos da seção [1.6](#16---dependências-do-projeto).*
 
 ```
 python -m spacy pt_core_news_lg
 ```
-
 
 *Nota: Caso dê algum erro na instalação das dependências, não continue antes de resolver... Pesquisar o erro no Google pode ajudar!*
 
