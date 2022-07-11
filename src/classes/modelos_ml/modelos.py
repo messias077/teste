@@ -5,9 +5,18 @@
 # em banco de dados, implemente ou altere a sua entrada na rotina da função de desserialização
 # no arquivo src.classes.persistencia.serializacao.py
 # ----------------------------------------------------------------------------------------------
+import os
+import logging
 from sklearn.base import BaseEstimator, ClassifierMixin
 from tensorflow.keras.preprocessing.text import Tokenizer
 from sklearn import preprocessing
+
+""" Desativa as mensagens de warning e info do TensorFlow """
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+logging.getLogger('tensorflow').setLevel(logging.FATAL)
+
+""" Desativa o uso de GPU """
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 
 class ModeloClassificacao(BaseEstimator, ClassifierMixin):
