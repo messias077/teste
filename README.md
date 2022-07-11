@@ -31,7 +31,9 @@ Instale os programas abaixo:
 
 * **Git.** Instruções: [Linux](https://git-scm.com/download/linux) ou [Windows](https://git-scm.com/download/win).
 
-* **Visual C++ (Somente Windows)**. Caso esteja utilizando o Windows e não tenha instalado o 'Visual C++', ['baixe aqui'](https://visualstudio.microsoft.com/visual-cpp-build-tools) e instale. Para rodar este protótipo é necessário somente marcar a opção *'Desenvolvimento para desktop com C++'* e clicar em instalar.
+* **Visual C++ (Somente Windows)**. Caso esteja utilizando o Windows e não tenha instalado o 'Visual C++', [baixe aqui](https://visualstudio.microsoft.com/visual-cpp-build-tools) e instale. Para rodar este protótipo é necessário somente marcar a opção *'Desenvolvimento para desktop com C++'* e clicar em instalar.
+
+* **Libmagic (Somente Windows)** Faça o download das dll's *libgnurx-0.dll* e *magic1.dll* diponíveis em [libmagicwin64](https://github.com/pidydx/libmagicwin64) e copie para a pasta *C:\Windows\System32*.
 
 *Nota: Há possibilidade de instalar o MongoDB via container do [Docker](https://www.docker.com/), porém esta forma de instalação não será abordada nos testes. Caso queira instalar dessa maneira, fique à vontade, pois o protótipo suporta e funciona perfeitamente.*
 
@@ -75,7 +77,7 @@ python -m spacy download pt_core_news_lg
 Para utilizar o protótipo e rodar os testes com parâmetros padrões execute os passos abaixo:
 
 ### 2.1 - Copiar editais
-* **Copie os editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é, ['ren_editais/repo/entrada/editais'](repo/entrada/editais), ou para outra pasta, caso tenha alterado os arquivos de configuração.
+* **Copie os editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é: ['ren_editais/repo/entrada/editais'](repo/entrada/editais).
 
 ### 2.2 - Processar editais
 * **Rode o script para processar os editais e gerar os arquivos para anotação.** Execute o comando abaixo para converter os editais em texto plano, cadastrar no banco de dados e gerar os arquivos que os anotadores utilizam para importar no Doccano e realizar as anotações.
@@ -88,7 +90,7 @@ python gerar_dataset_anotacao.py
 *Nota: Para facilitar, importe os labels para o Doccano utilizando o arquivo ['labels/label_config.json'](labels/label_config.json)*. Veja como no tutorial.
 
 ### 2.4 - Geração do *corpus* de teste
-* **Copie de descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é ['repo/arquivos_anotados'](repo/arquivos_anotados), ou para outra pasta, caso tenha alterado os arquivos de configuração. Descompacte os arquivos.
+* **Copie de descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é: ['repo/arquivos_anotados'](repo/arquivos_anotados). Descompacte os arquivos.
 
 * **Gere o *corpus* de teste no formato CONLL.** Para converter os arquivos anotados e gerar o *corpus* no formato CONLL rode o comando abaixo:
 ```
