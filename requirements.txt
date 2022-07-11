@@ -41,7 +41,6 @@ pdfminer.six==20211012
 pip==21.2.2
 preshed==3.0.6
 protobuf==3.19.1
-pt-core-news-lg==3.1.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
