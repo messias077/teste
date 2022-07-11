@@ -43,7 +43,7 @@ pandas==1.4.3
 pathy==0.6.2
 pdfminer.six==20220524
 pip==22.1.2
-pkg_resources==0.0.0
+pkg_resources>=0.0.0
 preshed==3.0.6
 protobuf==3.19.4
 pyasn1==0.4.8
