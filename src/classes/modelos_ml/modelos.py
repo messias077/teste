@@ -5,10 +5,9 @@
 # em banco de dados, implemente ou altere a sua entrada na rotina da função de desserialização
 # no arquivo src.classes.persistencia.serializacao.py
 # ----------------------------------------------------------------------------------------------
-import os
-import logging
-from sklearn.base import BaseEstimator, ClassifierMixin
-from sklearn import preprocessing
+
+# from sklearn.base import BaseEstimator, ClassifierMixin
+# from sklearn import preprocessing
 # from tensorflow.keras.preprocessing.text import Tokenizer
 
 
