@@ -13,6 +13,13 @@ from src.ambiente.preparar_ambiente import inicializar_parametros, validar_pasta
 from interface_prog import cadastrar_arquivos
 from src.modulos.preproc.preproc import pre_processamento
 from src.modulos.ren.ren import ren
+""" Desativa as mensagens de warning e info do TensorFlow """
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+logging.getLogger('tensorflow').setLevel(logging.FATAL)
+
+""" Desativa o uso de GPU """
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 
 # Esta opção é para apagar os bancos de dados caso o script seja rodado novamente.
 # Se não apagar, não será possível cadastrar um edital mais de uma vez, o script não deixa!
