@@ -9,17 +9,7 @@ import os
 import logging
 from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn import preprocessing
-
-""" Desativa as mensagens de warning e info do TensorFlow """
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-logging.getLogger('tensorflow').setLevel(logging.FATAL)
-
-""" Desativa o uso de GPU """
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
-
-# Só para tirar o import do início
-if True:
-    from tensorflow.keras.preprocessing.text import Tokenizer
+# from tensorflow.keras.preprocessing.text import Tokenizer
 
 
 class ModeloClassificacao(BaseEstimator, ClassifierMixin):

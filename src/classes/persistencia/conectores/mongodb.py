@@ -28,7 +28,7 @@ class ConectorMongoDb:
 
     def fechar_conexao(self):
         pass
-        # self.__conexao.close()
+        # self.__conexao.close() # Retirado porque estava dando erro no Windows!
 
     def inserir(self, colecao, objeto):
         destino = self.__banco[colecao]  # Indica a coleção onde os dados serão gravados no banco setado anteriormente
