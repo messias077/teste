@@ -5,6 +5,7 @@
 # Obs.: Utiliza os parâmetros padrões. Para escolher outros parâmetros
 # utilizar a interface interativa do programa: 'python interface_prog.py'
 # -----------------------------------------------------------------------------
+from src.utils import suprimir_warning_tf
 from src.modulos.ren.conversor_jsonl_conll import converter_jsonl_conll
 
 # Converte os arquivos anotados para o formato CONLL

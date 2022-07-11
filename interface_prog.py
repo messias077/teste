@@ -4,6 +4,7 @@
 # -----------------------------------------------------------------------------
 
 import os
+from src.utils import suprimir_warning_tf
 from src.ambiente.parametros_globais import FILE_NOT_FOUND_ERROR, PERMISSION_ERROR, PREPROC_CAMINHO_ARQ_CONF
 from src.ambiente.preparar_ambiente import inicializar_parametros, validar_pastas
 from src.classes.persistencia.cliente import ClienteGenerico
