@@ -70,7 +70,7 @@ python -m spacy pt_core_news_lg
 ---
 ## 2. Instruções de uso
 
-Para utilizar o protótipo e rodar os testes com parâmetros padrão execute os passos abaixo:
+Para utilizar o protótipo e rodar os testes com parâmetros padrões execute os passos abaixo:
 
 ### 2.1 - Copiar editais
 * **Copie os editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é, 'ren_editais/repo/editais', ou para outra pasta, caso tenha alterado os arquivos de configuração.
@@ -92,7 +92,7 @@ python gerar_dataset_anotacao.py
 ```
 python converter_arquivos_anotados.py
 ```
-Pronto! Se tudo aconteceu conforme esperado, nesse ponto você tem um *corpus*, baseado nos editais de testes, que pode ser utilizado como base para realizar as tarefas de REN.
+Pronto! Se tudo aconteceu conforme esperado, nesse ponto você tem um *corpus*, baseado nos editais de testes, que pode ser utilizado como base para realizar as tarefas de REN. Você pode rodar os experimentos da seção [3](#3-reproduzir-os-experimentos) utilizando o *corpus* de teste, entretanto os resultados serão diferentes de quando o exprerimento é rodado com o *corpus* disponibilizado no repositório!
 
 ### * (Opcional) Modo interativo
 
