@@ -6,6 +6,7 @@
 import json
 import os
 import magic
+import platform
 from sklearn.model_selection import train_test_split
 from src.ambiente.parametros_globais import PERMISSION_ERROR, REN_CAMINHO_ARQ_CONF, FILE_NOT_FOUND_ERROR, \
     INVALID_CONTENT, VALUE_ERROR
@@ -100,7 +101,11 @@ def carregar_arquivo(caminho):
     """
     # Verifica qual a codificação do arquivo
     try:
-        codificacao = magic.Magic(mime_encoding=True, magic_file="C:\\Windows\\System32\\magic.mgc").from_file(caminho)
+        if platform.system().lower() == 'windows':
+            codificacao = magic.Magic(mime_encoding=True,
+                                      magic_file="C:\\Windows\\System32\\magic.mgc").from_file(caminho)
+        else:
+            codificacao = magic.Magic(mime_encoding=True).from_file(caminho)
     except PermissionError:
         codificacao = 'utf-8'  # Assume que a codificação será 'utf-8'
 
@@ -236,7 +241,12 @@ def carregar_jsonl(caminho):
     """
     # Verifica qual a codificação do arquivo
     try:
-        codificacao = magic.Magic(mime_encoding=True, magic_file="C:\\Windows\\System32\\magic.mgc").from_file(caminho)
+        if platform.system().lower() == 'windows':
+            codificacao = magic.Magic(mime_encoding=True,
+                                      magic_file="C:\\Windows\\System32\\magic.mgc").from_file(caminho)
+        else:
+            codificacao = magic.Magic(mime_encoding=True).from_file(caminho)
+
     except PermissionError:
         codificacao = 'utf-8'  # Assume que a codificação será 'utf-8'
 
