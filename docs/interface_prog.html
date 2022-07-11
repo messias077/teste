@@ -350,22 +350,22 @@ def ler_dados_bd(tipo, opcao, chave, valor, caminho_dump):
         colecao_mongo = &#39;col_editais&#39;
 
         if opcao == &#39;3&#39;:
-            c_mongo = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, banco_mongo)
+            c_mongo = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, banco_mongo)
             doc_mongo_js = c_mongo.buscar_todos(colecao_mongo, chave, valor)
             c_mongo.fechar_conexao()
             docs_json = list(doc_mongo_js)
     elif tipo == &#39;DOCUMENTO&#39;:
-        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
         doc_metadados_js = c_mongo_meta.buscar_todos(&#39;col_metadados_docs&#39;, chave, valor)
         c_mongo_meta.fechar_conexao()
         docs_json = list(doc_metadados_js)
     elif tipo == &#39;LOTE&#39;:
-        c_mongo_lote = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_lote = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
         doc_lotes_js = c_mongo_lote.buscar_todos(&#39;col_metadados_lotes&#39;, chave, valor)
         c_mongo_lote.fechar_conexao()
         docs_json = list(doc_lotes_js)
     elif tipo == &#39;RESULTADO&#39;:
-        c_mongo_resultado = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_resultado = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
         doc_resultados_js = c_mongo_resultado.buscar_todos(&#39;col_metadados_resultados&#39;, chave, valor)
         c_mongo_resultado.fechar_conexao()
         docs_json = list(doc_resultados_js)
@@ -819,22 +819,22 @@ if __name__ == &#34;__main__&#34;:
         colecao_mongo = &#39;col_editais&#39;
 
         if opcao == &#39;3&#39;:
-            c_mongo = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, banco_mongo)
+            c_mongo = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, banco_mongo)
             doc_mongo_js = c_mongo.buscar_todos(colecao_mongo, chave, valor)
             c_mongo.fechar_conexao()
             docs_json = list(doc_mongo_js)
     elif tipo == &#39;DOCUMENTO&#39;:
-        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
         doc_metadados_js = c_mongo_meta.buscar_todos(&#39;col_metadados_docs&#39;, chave, valor)
         c_mongo_meta.fechar_conexao()
         docs_json = list(doc_metadados_js)
     elif tipo == &#39;LOTE&#39;:
-        c_mongo_lote = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_lote = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
         doc_lotes_js = c_mongo_lote.buscar_todos(&#39;col_metadados_lotes&#39;, chave, valor)
         c_mongo_lote.fechar_conexao()
         docs_json = list(doc_lotes_js)
     elif tipo == &#39;RESULTADO&#39;:
-        c_mongo_resultado = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_resultado = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
         doc_resultados_js = c_mongo_resultado.buscar_todos(&#39;col_metadados_resultados&#39;, chave, valor)
         c_mongo_resultado.fechar_conexao()
         docs_json = list(doc_resultados_js)

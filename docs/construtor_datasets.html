@@ -72,7 +72,7 @@ def obter_subsecoes_documentos(doc_metadados_js):
     &#34;&#34;&#34;
     print(f&#34;\n=&gt; Etapa: Obtendo subseções...&#34;, end=&#39;&#39;, flush=True)
 
-    c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_documentos&#39;)
+    c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_documentos&#39;)
     documentos_subsecoes = {}  # A chave é o código do arquivo e o valor é uma lista contendo as subseções do documento
 
     # Obtém os documentos (através dos metadados) que serão processados
@@ -455,7 +455,7 @@ def construir_dataset(data_hora, codproc, caminho, caminho_sentencas_base, taman
     documentos_sentencas = {}  # A chave é o código do arquivo e o valor é uma lista de sentenças
     caminho_com_data = &#34;&#34;  # Guarda o caminho onde os datasets serão gerados
 
-    c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+    c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
     doc_metadados_js = obter_metadados_documentos(c_mongo_meta, codproc, reprocessar)
 
     if doc_metadados_js:
@@ -857,7 +857,7 @@ def construir_dataset(data_hora, codproc, caminho, caminho_sentencas_base, taman
     documentos_sentencas = {}  # A chave é o código do arquivo e o valor é uma lista de sentenças
     caminho_com_data = &#34;&#34;  # Guarda o caminho onde os datasets serão gerados
 
-    c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+    c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
     doc_metadados_js = obter_metadados_documentos(c_mongo_meta, codproc, reprocessar)
 
     if doc_metadados_js:
@@ -1265,7 +1265,7 @@ def construir_dataset(data_hora, codproc, caminho, caminho_sentencas_base, taman
     &#34;&#34;&#34;
     print(f&#34;\n=&gt; Etapa: Obtendo subseções...&#34;, end=&#39;&#39;, flush=True)
 
-    c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_documentos&#39;)
+    c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_documentos&#39;)
     documentos_subsecoes = {}  # A chave é o código do arquivo e o valor é uma lista contendo as subseções do documento
 
     # Obtém os documentos (através dos metadados) que serão processados

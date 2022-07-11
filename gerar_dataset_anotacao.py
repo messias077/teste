@@ -26,7 +26,7 @@ if drop_databases:
     from src.ambiente.parametros_globais import CONNECTION_ERROR
 
     # Conecta ao banco
-    conexao = MongoClient('localhost', 2717)
+    conexao = MongoClient('localhost', 27017)
 
     try:
         conexao.admin.command('ismaster')

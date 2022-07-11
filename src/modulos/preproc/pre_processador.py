@@ -289,6 +289,8 @@ def pre_processar_arquivos(tipo, caminho_entrada, caminho_base, caminho_relativo
 
         arq_lock.close()
 
+        # O MongoDB roda em uma
+
         # Cria a conexão com o banco de dados
         c_mongo_doc = ClienteGenerico('MongoDB', 'localhost', 27017, 'db_documentos')
         c_mongo_meta = ClienteGenerico('MongoDB', 'localhost', 27017, 'db_metadados')

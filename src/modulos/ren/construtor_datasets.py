@@ -42,7 +42,7 @@ def obter_subsecoes_documentos(doc_metadados_js):
     """
     print(f"\n=> Etapa: Obtendo subseções...", end='', flush=True)
 
-    c_mongo_doc = ClienteGenerico('MongoDB', 'localhost', 2717, 'db_documentos')
+    c_mongo_doc = ClienteGenerico('MongoDB', 'localhost', 27017, 'db_documentos')
     documentos_subsecoes = {}  # A chave é o código do arquivo e o valor é uma lista contendo as subseções do documento
 
     # Obtém os documentos (através dos metadados) que serão processados
@@ -418,7 +418,7 @@ def construir_dataset(data_hora, codproc, caminho, caminho_sentencas_base, taman
     documentos_sentencas = {}  # A chave é o código do arquivo e o valor é uma lista de sentenças
     caminho_com_data = ""  # Guarda o caminho onde os datasets serão gerados
 
-    c_mongo_meta = ClienteGenerico('MongoDB', 'localhost', 2717, 'db_metadados')
+    c_mongo_meta = ClienteGenerico('MongoDB', 'localhost', 27017, 'db_metadados')
     doc_metadados_js = obter_metadados_documentos(c_mongo_meta, codproc, reprocessar)
 
     if doc_metadados_js:

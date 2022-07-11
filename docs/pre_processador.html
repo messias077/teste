@@ -324,8 +324,8 @@ def pre_processar_arquivos(tipo, caminho_entrada, caminho_base, caminho_relativo
         arq_lock.close()
 
         # Cria a conexão com o banco de dados
-        c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_documentos&#39;)
-        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_documentos&#39;)
+        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
 
         # Avalia em quais coleções/índices irá persistir os dados
         colecao_mongo = None
@@ -814,8 +814,8 @@ Obs.: Posteriormente os arquivos serão processados pelo sistema</p>
         arq_lock.close()
 
         # Cria a conexão com o banco de dados
-        c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_documentos&#39;)
-        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 2717, &#39;db_metadados&#39;)
+        c_mongo_doc = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_documentos&#39;)
+        c_mongo_meta = ClienteGenerico(&#39;MongoDB&#39;, &#39;localhost&#39;, 27017, &#39;db_metadados&#39;)
 
         # Avalia em quais coleções/índices irá persistir os dados
         colecao_mongo = None
