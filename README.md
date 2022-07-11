@@ -43,7 +43,7 @@ Instale os programas abaixo:
 
 *Nota: Apesar de não ser mandatório, a criação de um ambiente virtual ajuda na organização dos projetos e evita conflitos entre bibliotecas de projetos diferentes.*
 
-* **Instale e ative o Venv.** Entre na pasta criada no passo [1.2](#12---organize-as-coisas), instale e ative Venv. Instruções: [Linux e Windows (escolha o sistema na página)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
+* **Instale o Venv.** Entre na pasta criada no passo [1.2](#12---organize-as-coisas), instale o Venv, crie um ambiente virtual e ative. Instruções: [Linux e Windows (escolha o sistema na página)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
 
 ### 1.5 - Clone o repositório
 * **Clone.** De dentro da pasta criada no passo [1.2](#12---organize-as-coisas), clone o repositório com o comando:
@@ -60,6 +60,8 @@ e rode os comandos:
 ```
 pip install -r requirements.txt
 ```
+*Nota: Caso esteja instalando no Windows, pode ser que dê erro por falta do ['Visual C++'](https://visualstudio.microsoft.com/visual-cpp-build-tools). Baixe e instale. Para rodar este protótipo é necessário somente marcar a opção 'Desenvolvimento para desktop com C++' e clicar em instalar.*
+
 ```
 python -m spacy pt_core_news_lg
 ```
