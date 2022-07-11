@@ -14,6 +14,35 @@ from interface_prog import cadastrar_arquivos
 from src.modulos.preproc.preproc import pre_processamento
 from src.modulos.ren.ren import ren
 
+# Esta opção é para apagar os bancos de dados caso o script seja rodado novamente.
+# Se não apagar, não será possível cadastrar um edital mais de uma vez, o script não deixa!
+# Não tem uma interface para esta atividade porque ainda não foi decidido se o usuário terá
+# permissão para apagar os editais processados.
+drop_databases = True
+
+if drop_databases:
+    from pymongo import MongoClient
+    from pymongo.errors import ConnectionFailure
+    from src.ambiente.parametros_globais import CONNECTION_ERROR
+
+    # Conecta ao banco
+    conexao = MongoClient('localhost', 2717)
+
+    try:
+        conexao.admin.command('ismaster')
+    except ConnectionFailure:
+        print('\nErro ao conectar ao banco de dados MongoDB. Faça testes e verifique:')
+        print('- se o nome do servidor está correto;')
+        print('- se a porta para conexão ao banco está correta;')
+        print('- se o banco está rodando e aceitando conexões.\n')
+        exit(CONNECTION_ERROR)
+
+    # Apaga os bancos de dados
+    conexao.drop_database('db_documentos')
+    conexao.drop_database('db_metadados')
+
+    conexao.close()
+
 # Obtém o caminho do arquivo de configuração para montar o caminho completo
 caminho_arquivo_configuracao = PREPROC_CAMINHO_ARQ_CONF
 nome_arquivo_configuracao = 'param_preproc.conf'
@@ -40,4 +69,4 @@ time.sleep(5)  # Dá um tempo para o banco de dados indexar os editais inseridos
 # Gera os datasets para enviar para os anotadores
 print("\n### GERAÇÃO DOS DATASETS")
 ren('ner', 100, reprocessar=False, gerar_estatisticas=True, organizar_em_pastas=True,
-    retirar_sentencas_semelhantes=True, escopo_global_sentencas=True)
+    retirar_sentencas_semelhantes=True, escopo_global_sentencas=False)

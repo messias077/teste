@@ -56,10 +56,15 @@ git clone https://github.com/messias077/ren_editais.git
 ```
 cd ren_editais
 ```
-e rode o comando:
+e rode os comandos:
 ```
 pip install -r requirements.txt
 ```
+```
+python -m spacy pt_core_news_lg
+```
+
+
 *Nota: Caso dê algum erro na instalação das dependências, não continue antes de resolver... Pesquisar o erro no Google pode ajudar!*
 
 ---
