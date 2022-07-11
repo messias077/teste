@@ -92,7 +92,7 @@ python gerar_dataset_anotacao.py
 ```
 python converter_arquivos_anotados.py
 ```
-Pronto! Se tudo aconteceu conforme esperado, nesse ponto você tem um *corpus*, baseado nos editais de testes, que pode ser utilizado como base para realizar as tarefas de REN. Você pode rodar os experimentos da seção [3](#3-reproduzir-os-experimentos) utilizando o *corpus* de teste, entretanto os resultados serão diferentes de quando o exprerimento é rodado com o *corpus* disponibilizado no repositório!
+Pronto! Se tudo aconteceu conforme esperado, nesse ponto você tem um *corpus*, baseado nos editais de testes, que pode ser utilizado como base para realizar as tarefas de REN. Você pode rodar os experimentos da seção [3](#3-reproduzir-os-experimentos) utilizando o *corpus* de teste, entretanto os resultados serão diferentes de quando os experimentos são rodados com o *corpus* disponibilizado no repositório!
 
 ### * (Opcional) Modo interativo
 
