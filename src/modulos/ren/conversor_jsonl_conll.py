@@ -100,7 +100,7 @@ def carregar_arquivo(caminho):
     """
     # Verifica qual a codificação do arquivo
     try:
-        codificacao = magic.Magic(mime_encoding=True).from_file(caminho)
+        codificacao = magic.Magic(mime_encoding=True, magic_file="C:\\Windows\\System32\\magic.mgc").from_file(caminho)
     except PermissionError:
         codificacao = 'utf-8'  # Assume que a codificação será 'utf-8'
 
