@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 ```
-python -m spacy pt_core_news_lg
+python -m spacy download pt_core_news_lg
 ```
 
 *Nota: Caso dê algum erro na instalação das dependências, não continue antes de resolver... Pesquisar o erro no Google pode ajudar!*
@@ -75,7 +75,7 @@ python -m spacy pt_core_news_lg
 Para utilizar o protótipo e rodar os testes com parâmetros padrões execute os passos abaixo:
 
 ### 2.1 - Copiar editais
-* **Copie os editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é, 'ren_editais/repo/editais', ou para outra pasta, caso tenha alterado os arquivos de configuração.
+* **Copie os editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é, 'ren_editais/repo/entrada/editais', ou para outra pasta, caso tenha alterado os arquivos de configuração.
 
 ### 2.2 - Processar editais
 * **Rode o script para processar os editais e gerar os arquivos para anotação.** Execute o comando abaixo para converter os editais em texto plano, cadastrar no banco de dados e gerar os arquivos que os anotadores utilizam para importar no Doccano e realizar as anotações.

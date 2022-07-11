@@ -165,7 +165,7 @@ def dividir_em_sentencas(documentos_subsecoes, tamanho_minimo_sentenca):
         nlp = spacy.load(modelo_spacy)
     except OSError:
         print(f&#34;\n\n    ERRO: Não foi possível encontrar o modelo &#39;{modelo_spacy}&#39;. Confira o nome do modelo. Caso &#34;
-              f&#34;esteja correto, faça o download dele utilizando o comando &#39;python -m spacy {modelo_spacy}&#39; num &#34;
+              f&#34;esteja correto, faça o download dele utilizando o comando &#39;python -m spacy download {modelo_spacy}&#39; num &#34;
               f&#34;terminal.\n&#34;)
         exit(SPACY_MODEL_NOT_FOUND_ERROR)
 
@@ -1126,7 +1126,7 @@ def construir_dataset(data_hora, codproc, caminho, caminho_sentencas_base, taman
         nlp = spacy.load(modelo_spacy)
     except OSError:
         print(f&#34;\n\n    ERRO: Não foi possível encontrar o modelo &#39;{modelo_spacy}&#39;. Confira o nome do modelo. Caso &#34;
-              f&#34;esteja correto, faça o download dele utilizando o comando &#39;python -m spacy {modelo_spacy}&#39; num &#34;
+              f&#34;esteja correto, faça o download dele utilizando o comando &#39;python -m spacy download {modelo_spacy}&#39; num &#34;
               f&#34;terminal.\n&#34;)
         exit(SPACY_MODEL_NOT_FOUND_ERROR)
 

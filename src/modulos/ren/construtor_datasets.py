@@ -133,8 +133,8 @@ def dividir_em_sentencas(documentos_subsecoes, tamanho_minimo_sentenca):
         nlp = spacy.load(modelo_spacy)
     except OSError:
         print(f"\n\n    ERRO: Não foi possível encontrar o modelo '{modelo_spacy}'. Confira o nome do modelo. Caso "
-              f"esteja correto, faça o download dele utilizando o comando 'python -m spacy {modelo_spacy}' num "
-              f"terminal.\n")
+              f"esteja correto, faça o download dele utilizando o comando 'python -m spacy download {modelo_spacy}' "
+              f"num terminal.\n")
         exit(SPACY_MODEL_NOT_FOUND_ERROR)
 
     print("-> Pronto!")
