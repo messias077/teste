@@ -31,6 +31,8 @@ Instale os programas abaixo:
 
 * **Git.** Instruções: [Linux](https://git-scm.com/download/linux) ou [Windows](https://git-scm.com/download/win).
 
+* **Visual C++ (Somente Windows)**. Caso esteja utilizando o Windows e não tenha instalado o 'Visual C++', ['baixe aqui'](https://visualstudio.microsoft.com/visual-cpp-build-tools) e instale. Para rodar este protótipo é necessário somente marcar a opção *'Desenvolvimento para desktop com C++'* e clicar em instalar.
+
 *Nota: Há possibilidade de instalar o MongoDB via container do [Docker](https://www.docker.com/), porém esta forma de instalação não será abordada nos testes. Caso queira instalar dessa maneira, fique à vontade, pois o protótipo suporta e funciona perfeitamente.*
 
 ### 1.2 - Organize as coisas
@@ -60,7 +62,6 @@ e rode os comandos:
 ```
 pip install -r requirements.txt
 ```
-*Nota: Caso esteja instalando no Windows, pode ser que dê erro na execução do comando anterior por falta do ['Visual C++'](https://visualstudio.microsoft.com/visual-cpp-build-tools). Baixe e instale. Para rodar este protótipo é necessário somente marcar a opção 'Desenvolvimento para desktop com C++' e clicar em instalar. Se pedir para reinicar o computador, reinicie e refaça os passos da seção [1.6](#16---dependências-do-projeto).*
 
 ```
 python -m spacy pt_core_news_lg
