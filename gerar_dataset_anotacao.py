@@ -8,6 +8,7 @@
 
 import os
 import time
+import logging
 from src.ambiente.parametros_globais import PREPROC_CAMINHO_ARQ_CONF
 from src.ambiente.preparar_ambiente import inicializar_parametros, validar_pastas
 from interface_prog import cadastrar_arquivos
