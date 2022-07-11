@@ -27,7 +27,8 @@ class ConectorMongoDb:
         self.__banco = self.__conexao[banco]
 
     def fechar_conexao(self):
-        self.__conexao.close()
+        pass
+        # self.__conexao.close()
 
     def inserir(self, colecao, objeto):
         destino = self.__banco[colecao]  # Indica a coleção onde os dados serão gravados no banco setado anteriormente
