@@ -33,7 +33,7 @@ Instale os programas abaixo:
 
 * **Visual C++ (Somente Windows)**. Caso esteja utilizando o Windows e não tenha instalado o 'Visual C++', [baixe aqui](https://visualstudio.microsoft.com/visual-cpp-build-tools) e instale. Para rodar este protótipo é necessário somente marcar a opção *'Desenvolvimento para desktop com C++'* e clicar em instalar.
 
-* **Libmagic (Somente Windows)** Faça o download das dll's *libgnurx-0.dll* e *magic1.dll* diponíveis em [libmagicwin64](https://github.com/pidydx/libmagicwin64) e copie para a pasta *C:\Windows\System32*.
+* **Libmagic (Somente Windows)** Faça o download do arquivo *'magic.mgc'* e das dll's *'libgnurx-0.dll'* e *'magic1.dll'* diponíveis em [libmagicwin64](https://github.com/pidydx/libmagicwin64) e copie para a pasta *'C:\Windows\System32'*.
 
 *Nota: Há possibilidade de instalar o MongoDB via container do [Docker](https://www.docker.com/), porém esta forma de instalação não será abordada nos testes. Caso queira instalar dessa maneira, fique à vontade, pois o protótipo suporta e funciona perfeitamente.*
 
