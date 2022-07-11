@@ -6,7 +6,7 @@
 # no arquivo src.classes.persistencia.serializacao.py
 # ----------------------------------------------------------------------------------------------
 
-# from sklearn.base import BaseEstimator, ClassifierMixin
+from sklearn.base import BaseEstimator, ClassifierMixin
 # from sklearn import preprocessing
 # from tensorflow.keras.preprocessing.text import Tokenizer
 
