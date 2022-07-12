@@ -109,11 +109,13 @@ python interface_prog.py
 
 ![](./print_interface.png)
 
-Nesta, a escolha da opção **'1 - Cadastrar editais'** e em seguida as opções **'2 - Pré-Processar'** e **'4 - Construir Dataset'** é equivalente à rodar o script *'gerar_dataset_anotacao.py'* (descrito no passo [2.2](#22---processar-editais)), porém fornecendo os parâmetros interativamente.
+Nesta, a escolha da opção **'1 - Cadastrar Editais'** e em seguida as opções **'4 - Pré-Processar'** e **'5 - Construir Dataset'** é equivalente à rodar o script *'gerar_dataset_anotacao.py'* (descrito no passo [2.2](#22---processar-editais)), porém fornecendo os parâmetros interativamente.
 
-Já, ao escolher a opção **'5 - Converter JSONL para CONLL'**, após ter realizado a anotação dos arquivos no Doccano, é equivalente à rodar o script *'converter_arquivos_anotados.py'* (descrito no passo [2.4](#24---geração-do-corpus-de-teste)).
+Já, ao escolher a opção **'6 - Converter JSONL para CONLL'**, após ter realizado a anotação dos arquivos no Doccano, é equivalente à rodar o script *'converter_arquivos_anotados.py'* (descrito no passo [2.4](#24---geração-do-corpus-de-teste)).
 
-A opção **'3 - Buscar editais (MongoDB)'** pode ser utilizada para pesquisar os editais que tiveram o conteúdo extraido e salvo no banco de dados. Não há script equivalente para esta opção.
+A opção **'2 - Consultar Editais'** pode ser utilizada para pesquisar os editais que tiveram o conteúdo extraido e salvo no banco de dados. Não há script equivalente para esta opção.
+
+Por último, caso queira repetir os testes interativamente na interface, apague os editais cadastrados no banco de dados através da opção **'3 - Excluir Editais (para fins de testes)'**.
 
 ## 3. Reproduzir os experimentos
 Em construção... Será disponibilizado futuramente!
