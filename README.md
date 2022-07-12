@@ -71,9 +71,7 @@ python -m spacy download pt_core_news_lg
 
 *Nota: Caso dê algum erro na instalação das dependências, não continue antes de resolver... Pesquisar o erro no Google pode ajudar!*
 
----
 ## 2. Instruções de uso
-
 Para utilizar o protótipo e rodar os testes com parâmetros padrões execute os passos abaixo:
 
 ### 2.1 - Copiar editais
@@ -114,6 +112,5 @@ Já, ao escolher a opção **'5 - Converter JSONL para CONLL'**, após ter reali
 
 A opção **'3 - Buscar editais (MongoDB)'** pode ser utilizada para pesquisar os editais que tiveram o conteúdo extraido e salvo no banco de dados. Não há script equivalente para esta opção.
 
----
 ## 3. Reproduzir os experimentos
 Em construção... Será disponibilizado futuramente!
