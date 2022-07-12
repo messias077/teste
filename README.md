@@ -76,7 +76,7 @@ python -m spacy download pt_core_news_lg
 Para utilizar o protótipo e rodar os testes com parâmetros padrões execute os passos abaixo:
 
 ### 2.1 - Copiar editais
-* **Copie os editais de testes.** Copie os editais de testes que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é: ['ren_editais/repo/entrada/editais'](repo/entrada/editais).
+* **Copie os editais de testes.** Copie os editais de testes (.PDF) que estão localizados na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta de entrada padrão do protótipo que é: ['ren_editais/repo/entrada/editais'](repo/entrada/editais).
 
 ### 2.2 - Processar editais
 * **Rode o script para processar os editais e gerar os arquivos para anotação.** Execute o comando abaixo para converter os editais em texto plano, cadastrar no banco de dados e gerar os arquivos que os anotadores utilizam para importar no Doccano e realizar as anotações.
@@ -89,7 +89,7 @@ python gerar_dataset_anotacao.py
 *Nota: Para facilitar, importe os labels para o Doccano utilizando o arquivo ['labels/label_config.json'](labels/label_config.json)*. Veja como no tutorial.
 
 ### 2.4 - Geração do *corpus* de teste
-* **Copie e descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é: ['repo/arquivos_anotados'](repo/arquivos_anotados). Descompacte os arquivos.
+* **Copie e descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é: ['repo/arquivos_anotados'](repo/arquivos_anotados). Descompacte os arquivos. Se você não puder ou não tiver tempo de anotar os arquivos gerados no passo [2.3](#23---anotação-das-entidades), copie e descompacte o arquivo *'exemplo_edital_anotado_doccano.zip'* que está na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta ['repo/arquivos_anotados'](repo/arquivos_anotados).
 
 * **Gere o *corpus* de teste no formato CONLL.** Para converter os arquivos anotados e gerar o *corpus* no formato CONLL rode o comando abaixo:
 ```
