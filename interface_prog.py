@@ -406,7 +406,8 @@ def menu():
 
                     ler_dados_bd(tipo_doc.upper(), op, chave_doc, valor_chave, parametros['p_caminho_dumps'])
         elif op == '3':
-            limpar_db_para_testes(interativo=True)
+            pass
+            # limpar_db_para_testes(interativo=True)
         elif op == '4':
             pre_processamento()
         elif op == '5':
