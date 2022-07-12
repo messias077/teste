@@ -16,7 +16,7 @@ def limpar_db_para_testes(interativo=False):
     resp = ""
 
     if interativo:
-        resp = input("Deseja realmente excluir todos os editais? (S/N): ").lower()
+        resp = input("\nDeseja realmente excluir todos os editais? (S/N): ").lower()
 
     if resp == 's' or not interativo:
         print("\nPara fins de testes, excluindo os editais cadastrados...", end='', flush=True)

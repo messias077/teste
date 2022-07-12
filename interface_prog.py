@@ -366,20 +366,18 @@ def menu():
     while True:
         print('\n***************( INTERFACE DO PROTÓTIPO - MODO TEXTO )**************\n')
         print('                      >> MENU <<\n')
-        print('             1 - Cadastrar editais')
-        print('             2 - Pré-Processar')
-        print('             3 - Buscar editais (MongoDB)')
-        print('             4 - Construir Dataset')
-        print('             5 - Converter JSONL para CONLL')
-        print('             6 - Excluir editais do MongoDB (para fins de testes)')
+        print('             1 - Cadastrar Editais')
+        print('             2 - Consultar Editais')
+        print('             3 - Excluir Editais (para fins de testes)')
+        print('             4 - Pré-Processar')
+        print('             5 - Construir Dataset')
+        print('             6 - Converter JSONL para CONLL')
         print('\n********************************************************************')
         op = input("Escolha a opção (Sair => 0): ")
 
         if op == '1':
             cadastrar_arquivos('EDITAL', 'SISTEMA', parametros['p_caminho_entrada'])
         elif op == '2':
-            pre_processamento()
-        elif op == '3':
             print("\nInforme os parâmetros abaixo:\n")
             tipo_doc = input("  --Tipo (EDITAL, DOCUMENTO, LOTE ou RESULTADO)...: ").upper()
 
@@ -407,7 +405,11 @@ def menu():
                         break
 
                     ler_dados_bd(tipo_doc.upper(), op, chave_doc, valor_chave, parametros['p_caminho_dumps'])
+        elif op == '3':
+            limpar_db_para_testes(interativo=True)
         elif op == '4':
+            pre_processamento()
+        elif op == '5':
             gerar_estatisticas = False
             gerar_estatisticas_str = 'n'
             organizar_em_pastas = True
@@ -480,7 +482,7 @@ def menu():
                     (resp_escopo_global_sentencas == 's' or resp_escopo_global_sentencas == 'n'):
                 ren(codproc, qtd_sents, reprocessar, gerar_estatisticas, organizar_em_pastas,
                     retirar_sentencas_similares, escopo_global_sentencas)
-        elif op == '5':
+        elif op == '6':
             retirar_sentencas_similares_str = input("\nDeseja retirar as sentenças similares na geração dos arquivos "
                                                     "CONLL? (S/N): ")
             resp_retirar_sentencas_similares = retirar_sentencas_similares_str.lower()
@@ -517,8 +519,6 @@ def menu():
                 converter_jsonl_conll(retirar_sentencas_semelhantes=retirar_sentencas_similares,
                                       escopo_global_sentencas=True, tamanho_dataset_teste=tamanho_dataset_teste,
                                       concatenar_arquivos=True)
-        elif op == '6':
-            limpar_db_para_testes(interativo=True)
         elif op.upper() == '0':
             break
 
