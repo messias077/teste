@@ -89,7 +89,7 @@ python gerar_dataset_anotacao.py
 *Nota: Para facilitar, importe os labels para o Doccano utilizando o arquivo ['labels/label_config.json'](labels/label_config.json)*. Veja como no tutorial.
 
 ### 2.4 - Geração do *corpus* de teste
-* **Copie e descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é: ['repo/arquivos_anotados'](repo/arquivos_anotados). Descompacte os arquivos. Se você não puder ou não tiver tempo de anotar os arquivos gerados no passo [2.3](#23---anotação-das-entidades), copie e descompacte o arquivo *'exemplo_edital_anotado_doccano.zip'* que está na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta ['repo/arquivos_anotados'](repo/arquivos_anotados).
+* **Copie e descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é: ['repo/arquivos_anotados'](repo/arquivos_anotados). Descompacte os arquivos. Se você não puder ou não tiver tempo de anotar os arquivos gerados no passo [2.3](#23---anotação-das-entidades), copie e descompacte o arquivo *'edital_exemplo_anotado_doccano.zip'* que está na pasta ['ren_editais/editais_testes'](editais_testes/) para a pasta ['repo/arquivos_anotados'](repo/arquivos_anotados).
 
 * **Gere o *corpus* de teste no formato CONLL.** Para converter os arquivos anotados e gerar o *corpus* no formato CONLL rode o comando abaixo:
 ```
