@@ -10,8 +10,10 @@ Repositório do artigo publicado: [*"Combining Word Embeddings for Portuguese Na
 
 > Leia a [dissertação](https://messias077.github.io/teste/dissertacao.pdf) para entender o contexto em que o protótipo foi utilizado.<br>
 > Acesse a [documentação do protótipo](https://messias077.github.io/teste/) para detalhes sobre a implementação!<br>
-> Código testado com [Python 3.10.5](https://www.python.org/downloads/release/python-3105/) (Release Date: June 6, 2022).<br> 
+> Código testado no Linux com [Python 3.10.4](https://www.python.org/downloads/release/python-3104/) (Release Date: Apr 2, 2022).<br> 
+> Código testado no Windows com [Python 3.10.5](https://www.python.org/downloads/release/python-3105/) (Release Date: June 6, 2022).<br> 
 > Consulte os ['requirements'](requirements.txt) para saber as versões de todas as bibliotecas usadas.
+
 
 ## Introdução
 Este README fornece informações e instruções para quem quiser testar o protótipo e/ou reproduzir os experimentos de REN utilizando o *corpus* (['ren_editais/corpora'](corpora/)) disponibilizado neste repositório. São basicamente duas opções de uso:
