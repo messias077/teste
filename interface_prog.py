@@ -321,7 +321,7 @@ def ler_dados_bd(tipo, opcao, chave, valor, caminho_dump):
         if opcao == '3':
             c_mongo = ClienteGenerico('MongoDB', 'localhost', 27017, banco_mongo)
             doc_mongo_js = c_mongo.buscar_todos(colecao_mongo, chave, valor)
-            c_mongo.fechar_conexao()
+            # c_mongo.fechar_conexao()
             docs_json = list(doc_mongo_js)
     elif tipo == 'DOCUMENTO':
         c_mongo_meta = ClienteGenerico('MongoDB', 'localhost', 27017, 'db_metadados')
