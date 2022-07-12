@@ -5,6 +5,7 @@
 
 import os
 from src.utils import suprimir_warning_tf
+from src.utils.limpar_db import limpar_db_para_testes
 from src.ambiente.parametros_globais import FILE_NOT_FOUND_ERROR, PERMISSION_ERROR, PREPROC_CAMINHO_ARQ_CONF
 from src.ambiente.preparar_ambiente import inicializar_parametros, validar_pastas
 from src.classes.persistencia.cliente import ClienteGenerico
@@ -15,10 +16,6 @@ from src.modulos.preproc.preproc import pre_processamento
 from src.modulos.ren.conversor_jsonl_conll import converter_jsonl_conll
 from src.modulos.ren.ren import ren
 from src.utils.geradores import gerar_data, gerar_epoch
-
-# TODO: Anotar o edital de exemplo
-# TODO: Regerar a documentação
-# TODO: Revisar o README (Já foi testado no Windows e no Linux!)
 
 
 def imprimir_chaves(tipo_doc):
@@ -374,6 +371,7 @@ def menu():
         print('             3 - Buscar editais (MongoDB)')
         print('             4 - Construir Dataset')
         print('             5 - Converter JSONL para CONLL')
+        print('             6 - Excluir editais do MongoDB (para fins de testes)')
         print('\n********************************************************************')
         op = input("Escolha a opção (Sair => 0): ")
 
@@ -519,6 +517,8 @@ def menu():
                 converter_jsonl_conll(retirar_sentencas_semelhantes=retirar_sentencas_similares,
                                       escopo_global_sentencas=True, tamanho_dataset_teste=tamanho_dataset_teste,
                                       concatenar_arquivos=True)
+        elif op == '6':
+            limpar_db_para_testes(interativo=True)
         elif op.upper() == '0':
             break
 

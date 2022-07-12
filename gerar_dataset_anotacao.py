@@ -9,6 +9,7 @@
 import os
 import time
 from src.utils import suprimir_warning_tf
+from src.utils.limpar_db import limpar_db_para_testes
 from src.ambiente.parametros_globais import PREPROC_CAMINHO_ARQ_CONF, FILE_NOT_FOUND_ERROR, PERMISSION_ERROR
 from src.ambiente.preparar_ambiente import inicializar_parametros, validar_pastas
 from interface_prog import cadastrar_arquivos
@@ -47,27 +48,7 @@ def verificar_arquivos_dropar_databases(caminho):
             break
 
     if tem_arquivos_para_processar:
-        from pymongo import MongoClient
-        from pymongo.errors import ConnectionFailure
-        from src.ambiente.parametros_globais import CONNECTION_ERROR
-
-        # Conecta ao banco
-        conexao = MongoClient('localhost', 27017)
-
-        try:
-            conexao.admin.command('ismaster')
-        except ConnectionFailure:
-            print('\nErro ao conectar ao banco de dados MongoDB. Faça testes e verifique:')
-            print('- se o nome do servidor está correto;')
-            print('- se a porta para conexão ao banco está correta;')
-            print('- se o banco está rodando e aceitando conexões.\n')
-            exit(CONNECTION_ERROR)
-
-        # Apaga os bancos de dados
-        conexao.drop_database('db_documentos')
-        conexao.drop_database('db_metadados')
-
-        conexao.close()
+        limpar_db_para_testes()
     else:
         print(f"\nO caminho '{caminho_verificar}' não possui arquivos para processar!\n")
         exit(FILE_NOT_FOUND_ERROR)
