@@ -26,15 +26,16 @@ def verificar_arquivos_dropar_databases(caminho):
         :param caminho: Caminhos onde se encontram os possíveis arquivos para processar.
     """
     arquivos_verificar = []
+    caminho_verificar = os.path.join(caminho, 'editais')
 
     # Obtém a lista de todos os arquivos que serão verificados
     try:
-        arquivos_verificar = os.listdir(caminho)
+        arquivos_verificar = os.listdir(caminho_verificar)
     except FileNotFoundError:
-        print(f"\nO caminho '{caminho}' não existe!\n")
+        print(f"\nO caminho '{caminho_verificar}' não existe!\n")
         exit(FILE_NOT_FOUND_ERROR)
     except PermissionError:
-        print(f"\nErro ao listar o caminho '{caminho}'. Permissão de leitura negada!\n")
+        print(f"\nErro ao listar o caminho '{caminho_verificar}'. Permissão de leitura negada!\n")
         exit(PERMISSION_ERROR)
 
     tem_arquivos_para_processar = False
@@ -68,7 +69,7 @@ def verificar_arquivos_dropar_databases(caminho):
 
         conexao.close()
     else:
-        print(f"\nO caminho '{caminho}/editais' não possui arquivos para processar!\n")
+        print(f"\nO caminho '{caminho_verificar}' não possui arquivos para processar!\n")
         exit(FILE_NOT_FOUND_ERROR)
 
 
