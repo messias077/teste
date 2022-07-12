@@ -48,7 +48,7 @@ Instale os programas e bibliotecas abaixo:
 
 ### 1.4 - Ambiente virtual Python (opcional)
 
-*Nota: Apesar de não ser mandatório, a criação de um ambiente virtual ajuda na organização dos projetos e evita conflitos entre bibliotecas de projetos diferentes.*
+Apesar de não ser mandatório, a criação de um ambiente virtual ajuda na organização dos projetos e evita conflitos entre bibliotecas de projetos diferentes.
 
 * **Instale o Venv.** Entre na pasta criada no passo [1.2](#12---organize-as-coisas), instale o Venv, crie um ambiente virtual e ative. Instruções: [Linux e Windows (escolha o sistema na página)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
 
