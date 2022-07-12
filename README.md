@@ -89,7 +89,7 @@ python gerar_dataset_anotacao.py
 *Nota: Para facilitar, importe os labels para o Doccano utilizando o arquivo ['labels/label_config.json'](labels/label_config.json)*. Veja como no tutorial.
 
 ### 2.4 - Geração do *corpus* de teste
-* **Copie de descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é: ['repo/arquivos_anotados'](repo/arquivos_anotados). Descompacte os arquivos.
+* **Copie e descompacte os arquivos anotados.** Copie os arquivos JSONL que foram anotados e exportados pela ferramenta Doccano para a pasta de arquivos anotados padrão do protótipo, que é: ['repo/arquivos_anotados'](repo/arquivos_anotados). Descompacte os arquivos.
 
 * **Gere o *corpus* de teste no formato CONLL.** Para converter os arquivos anotados e gerar o *corpus* no formato CONLL rode o comando abaixo:
 ```
@@ -99,7 +99,7 @@ Pronto! Se tudo aconteceu conforme esperado, nesse ponto você tem um *corpus*, 
 
 ### * (Opcional) Modo interativo
 
-Para realizar a geração do *corpus* de teste é possível também interagir com o protótipo através de uma interface em modo texto. Para abrir a inteface execute o comando abaixo:
+Para realizar a geração do *corpus* de teste é possível também interagir com o protótipo através de uma interface em modo texto. Para abrir a interface execute o comando abaixo:
 ```
 python interface_prog.py
 ```
