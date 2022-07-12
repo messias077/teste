@@ -21,10 +21,10 @@ Este README fornece informações e instruções para quem quiser testar o prot�
 Se você estiver interessado em testar o protótipo e também reproduzir os experimentos, será uma satisfação enorme! Neste caso, siga todos os passos descritos a seguir.
 
 ## 1. Preparação do ambiente
-Antes de utilizar o protótip, é necessário preparar o sistema do seu computador para executá-lo.
+Antes de utilizar o protótipo, é necessário preparar o sistema do seu computador para executá-lo.
 
 ### 1.1 - Pré-requisitos
-Instale os programas abaixo:
+Instale os programas e bibliotecas abaixo:
 * **MongoDB.** Instale e deixe o MongoDB em execução (*Nota: Para fins de testes, não há necessidade de criar usuário e senha para acesso ao banco, o protótipo funcionará sem*). Instruções: [Linux](https://www.mongodb.com/docs/manual/administration/install-on-linux/) ou [Windows](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows).
 
 * **Python.** Instruções: [Linux (Geralmente já vem instalado por padrão)](https://python.org.br/instalacao-linux) ou [Windows](https://www.python.org/downloads/windows).
