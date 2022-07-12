@@ -8,9 +8,9 @@ Orientador: [Prof. Dr. Hilário Tomaz Alves de Oliveira](http://lattes.cnpq.br/8
 Repositório do artigo publicado: [*"Combining Word Embeddings for Portuguese Named Entity Recognition"*](https://github.com/messias077/ner_pt)
 
 ---
-### >> Leia a [dissertação](https://messias077.github.io/teste/dissertacao.pdf) para entender o contexto em que o protótipo foi utilizado.
-### >> Acesse a [documentação do protótipo](https://messias077.github.io/teste/) para detalhes sobre a implementação!
-### >> Código testado com [Python 3.10.5](https://www.python.org/downloads/release/python-3105/) (Release Date: June 6, 2022)
+> Leia a [dissertação](https://messias077.github.io/teste/dissertacao.pdf) para entender o contexto em que o protótipo foi utilizado.<br>
+> Acesse a [documentação do protótipo](https://messias077.github.io/teste/) para detalhes sobre a implementação!<br>
+> Código testado com [Python 3.10.5](https://www.python.org/downloads/release/python-3105/) (Release Date: June 6, 2022)
 ---
 ## Introdução
 Este README fornece informações e instruções para quem quiser testar o protótipo e/ou reproduzir os experimentos de REN utilizando o *corpus* (['ren_editais/corpora'](corpora/)) disponibilizado neste repositório. São basicamente duas opções de uso:
