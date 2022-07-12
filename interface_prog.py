@@ -16,6 +16,10 @@ from src.modulos.ren.conversor_jsonl_conll import converter_jsonl_conll
 from src.modulos.ren.ren import ren
 from src.utils.geradores import gerar_data, gerar_epoch
 
+# TODO: Anotar o edital de exemplo
+# TODO: Regerar a documentação
+# TODO: Revisar o README (Já foi testado no Windows e no Linux!)
+
 
 def imprimir_chaves(tipo_doc):
     """
