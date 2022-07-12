@@ -28,7 +28,7 @@ Antes de utilizar o protótipo, é necessário preparar o sistema do seu computa
 
 ### 1.1 - Pré-requisitos
 Instale os programas e bibliotecas abaixo:
-* **MongoDB.** Instale e deixe o MongoDB em execução (*Nota: Para fins de testes, não há necessidade de criar usuário e senha para acesso ao banco, o protótipo funcionará sem*). Instruções: [Linux](https://www.mongodb.com/docs/manual/administration/install-on-linux/) ou [Windows](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows).
+* **MongoDB.** Instale e deixe o MongoDB em execução (para fins de testes, não há necessidade de criar usuário e senha para acesso ao banco, o protótipo funcionará sem). Instruções: [Linux](https://www.mongodb.com/docs/manual/administration/install-on-linux/) ou [Windows](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows).
 
 * **Python.** Instruções: [Linux (Geralmente já vem instalado por padrão)](https://python.org.br/instalacao-linux) ou [Windows](https://www.python.org/downloads/windows).
 
@@ -115,7 +115,9 @@ Já, ao escolher a opção **'6 - Converter JSONL para CONLL'**, após ter reali
 
 A opção **'2 - Consultar Editais'** pode ser utilizada para pesquisar os editais que tiveram o conteúdo extraido e salvo no banco de dados. Não há script equivalente para esta opção.
 
-Por último, caso queira repetir os testes interativamente na interface, apague os editais cadastrados no banco de dados através da opção **'3 - Excluir Editais (para fins de testes)'**.
+Por último, caso queira repetir os testes interativamente na interface, apague os editais cadastrados no banco de dados através da opção **'3 - Excluir Editais (para fins de testes)'**. 
+
+*Nota: Na execução do script 'gerar_dataset_anotacao.py' os editais são excluídos banco de dados (sem confirmação do usuário). Caso contrário, não seria possível a reexecução dos testes, pois o protótipo não deixa cadastrar um edital se ele já constar no banco de dados*.
 
 ## 3. Reproduzir os experimentos
 Em construção... Será disponibilizado futuramente!
