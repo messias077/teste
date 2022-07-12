@@ -68,7 +68,7 @@ def verificar_arquivos_dropar_databases(caminho):
 
         conexao.close()
     else:
-        print(f"\nO caminho '{caminho}' não possui arquivos para processar!\n")
+        print(f"\nO caminho '{caminho}/editais' não possui arquivos para processar!\n")
         exit(FILE_NOT_FOUND_ERROR)
 
 
