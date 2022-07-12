@@ -318,10 +318,10 @@ def ler_dados_bd(tipo, opcao, chave, valor, caminho_dump):
         banco_mongo = 'db_documentos'
         colecao_mongo = 'col_editais'
 
-        if opcao == '3':
+        if opcao == '2':
             c_mongo = ClienteGenerico('MongoDB', 'localhost', 27017, banco_mongo)
             doc_mongo_js = c_mongo.buscar_todos(colecao_mongo, chave, valor)
-            # c_mongo.fechar_conexao()
+            c_mongo.fechar_conexao()
             docs_json = list(doc_mongo_js)
     elif tipo == 'DOCUMENTO':
         c_mongo_meta = ClienteGenerico('MongoDB', 'localhost', 27017, 'db_metadados')
@@ -406,8 +406,7 @@ def menu():
 
                     ler_dados_bd(tipo_doc.upper(), op, chave_doc, valor_chave, parametros['p_caminho_dumps'])
         elif op == '3':
-            pass
-            # limpar_db_para_testes(interativo=True)
+            limpar_db_para_testes(interativo=True)
         elif op == '4':
             pre_processamento()
         elif op == '5':
