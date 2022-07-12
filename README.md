@@ -117,7 +117,7 @@ A opção **'2 - Consultar Editais'** pode ser utilizada para pesquisar os edita
 
 Por último, caso queira repetir os testes interativamente na interface, apague os editais cadastrados no banco de dados através da opção **'3 - Excluir Editais (para fins de testes)'**. 
 
-*Nota: Na execução do script 'gerar_dataset_anotacao.py' os editais são excluídos banco de dados (sem confirmação do usuário). Caso contrário, não seria possível a reexecução dos testes, pois o protótipo não deixa cadastrar um edital se ele já constar no banco de dados*.
+*Nota: Na execução do script 'gerar_dataset_anotacao.py' os editais são excluídos do banco de dados (sem confirmação do usuário). Caso contrário, não seria possível a reexecução dos testes, pois o protótipo não deixa cadastrar um edital se ele já constar no banco de dados*.
 
 ## 3. Reproduzir os experimentos
 Em construção... Será disponibilizado futuramente!
