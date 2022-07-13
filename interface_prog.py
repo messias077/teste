@@ -530,3 +530,5 @@ if __name__ == "__main__":
     # TODO: Anotar o edital de exemplo
     # TODO: Regerar a documentação
     # TODO: Revisar o README (Já foi testado no Windows e no Linux!)
+    # TODO: Fazer manual de uso da interface interativa
+    # TODO: Colocar a imagem das atividades do processo: coletar editais, pré-processar...
