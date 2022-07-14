@@ -527,6 +527,8 @@ def menu():
 # projeto. Exemplo no Linux: export PYTHONPATH='/dados/develop/PycharmProjects/mestrado'
 if __name__ == "__main__":
     menu()
+    # TODO: Gerar o dataset de treino para classificação (JUR, TEC) e retreinar o modelo
+    # TODO: Com o modelo retreinado, classificar o edital de exemplo
     # TODO: Anotar o edital de exemplo
     # TODO: Regerar a documentação
     # TODO: Revisar o README (Já foi testado no Windows e no Linux!)
