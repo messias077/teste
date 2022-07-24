@@ -535,3 +535,4 @@ if __name__ == "__main__":
     # TODO: Fazer manual de uso da interface interativa
     # TODO: Colocar a imagem das atividades do processo: coletar editais, pré-processar...
     # TODO: Incluir a deleção do arquivo de sentenças base para evitar surpresas nos testes
+    # TODO: Incluir opção para rodar o modelo de classificação
